@@ -1,10 +1,12 @@
 # Breast Ultrasound Image Classification using Deep Learning & ML 🎗️
 
-This repository hosts a comparative study between Deep Learning and Classical Machine Learning approaches for the automated classification of breast ultrasound images. The project utilizes the **Breast Ultrasound Images Dataset (BUSI)** to classify scans into three categories: **Benign, Malignant, and Normal**.
+> **Research and education only.** This repository does not document clinical validation. Do not use these experimental model outputs for diagnosis, treatment, triage, or other patient-care decisions.
 
-## 📊 Project OverviewS
+This repository compares deep-learning and classical machine-learning approaches on the **Breast Ultrasound Images Dataset (BUSI)**, which contains benign, malignant, and normal scans. The reported scores are dataset-specific experimental results; they do not establish clinical performance.
 
-Accurate diagnosis of breast cancer from ultrasound imagery is a critical challenge in medical imaging. This project implements and evaluates two distinct modeling approaches to address this:
+## 📊 Project Overview
+
+The project implements and evaluates two modeling approaches for classifying the BUSI images:
 
 1.  **Deep Learning (DL):** A Convolutional Neural Network (CNN) based on **EfficientNet-B0** using Transfer Learning.
 2.  **Machine Learning (ML):** A traditional **Random Forest Classifier** combined with Principal Component Analysis (PCA) for dimensionality reduction.
@@ -67,7 +69,7 @@ The Deep Learning approach significantly outperformed the Classical ML model, de
 | **Malignant** | 0.94 | 0.98 | 0.96 | 793 |
 | **Normal** | 0.96 | 0.99 | 0.97 | 800 |
 
-*Analysis: The DL model achieved exceptional sensitivity (Recall) for Malignant cases (98%), which is crucial for medical diagnosis to avoid false negatives.*
+*Analysis: The DL model achieved 98% recall for malignant cases on the reported split. This experimental benchmark result is not evidence of clinical performance.*
 
 #### 2. Random Forest (Machine Learning)
 | Class | Precision | Recall | F1-Score | Support |
